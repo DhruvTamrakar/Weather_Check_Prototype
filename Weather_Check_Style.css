@@ -1,0 +1,116 @@
+* {
+    padding: 0%;
+    margin: 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+body {
+    background-image: radial-gradient(white, aqua);
+    background-size: fill;
+}
+.header{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+    font-size: large;
+    padding: 5px;
+    height: 20px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid black;
+}
+.container {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    row-gap: 50px;
+    column-gap: 50px;
+    justify-content: center;
+    padding: 70px 20px 10px 20px;
+    transition: all 1s;
+}
+
+.container .info {
+    font-size: x-large;
+    overflow-wrap: break-word;
+    border: 5px inset rgba(169, 165, 165, 0.417);
+    transition-duration: 0.3s; 
+    padding: 150px 10px;
+
+}
+
+
+.info:hover {
+    transform: translateY(-20px); 
+}
+.cont2{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.location {
+    font-size: larger;
+    padding: 10px 40px;
+    text-align: start;
+}
+
+.btn {
+    
+    font-size: larger;
+    background-color: rgb(255, 213, 0);
+}
+.btn:active{
+    scale: 0.9;
+}
+[class*= "col-"]{
+    float: left;
+    padding: 10px;
+    width: 100%;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media screen and (max-width: 600px) {
+    /* for mobile */
+    .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px auto auto auto;
+    padding: 20px;
+    transition: all 1s;
+    }
+    .container .info {
+        font-size: large;
+        overflow-wrap: break-word;
+        border: 5px inset rgba(169, 165, 165, 0.417);
+        transition-duration: 0.3s; 
+        padding: 30px 10px;
+    
+    }
+    .cont2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .location {
+        width: 80%;
+        font-size: larger;
+        padding: 5px 20px;
+        text-align: start;
+    }
+    .btn{
+        width: 70%;
+    }
+    
+}
